@@ -1,0 +1,51 @@
+
+<div class="row cs" *ngFor='let shape of Shapes; let index = index'>
+  <div class="col-md-4 hs-1">
+    <tree-ngx
+    (selectedItems)="shape.data['heirarchy'] = $event"
+    [options]="options"
+    [nodeItems]="json.highrar"> 
+    </tree-ngx>
+  </div>
+  <div class="col-md-4">
+    <ng-select [items]="json.group.data.device_group" 
+        class="m-2"
+        placeholder='Asset group'
+        bindLabel="label" 
+        [closeOnSelect]=false
+        [multiple]=true
+        [(ngModel)]="shape.data.group">
+    </ng-select>
+
+    <ng-select [items]="json.asset.data.devices" 
+        class="m-2"
+        placeholder='Asset'
+        bindLabel="label" 
+        [(ngModel)]="shape.data.asset">
+    </ng-select>
+
+    <ng-select [items]="json.shift.data.shift" 
+        class="m-2"
+        placeholder='Shift'
+        bindLabel="label" 
+        [(ngModel)]="shape.data.shift">
+    </ng-select>
+  </div>
+  <div class="col-md-4">
+    <button class="btn btn-danger" (click)="removeShape(index)">- Delete Shape</button>
+  </div>
+</div>
+
+<div class="container">
+  <button class="btn btn-warning m-2" (click)='addShape()'>+ Add Shape</button>
+  <button class="btn btn-success m-2" (click)="saveShape()">Submit</button>
+</div>
+
+<div class="row">
+  <div class="mainJSON">
+    <div id="formattedJSON"></div>
+  </div>
+  <!-- <div class="dictionary">
+    <div id="formattedJSON"></div>
+  </div> -->
+</div>

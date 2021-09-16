@@ -1,0 +1,95 @@
+
+
+
+{
+    "filter": {
+        "data": [
+            {
+            //heirarchy
+              "value": [1568885535169, 1608103348723],
+              "overwrite":true
+            },
+            {
+            //group
+                "value": [
+                    [{
+                        "label":"Incomer PQ Analyzer",
+                        "value":"device_group_1",
+                        "checked":true
+                    }],
+                    [{
+                        "label":"Incomer PQ Analyzer",
+                        "value":"device_group_1",
+                        "checked":true
+                    }]
+                ]
+            }
+        ],
+        "nodes":[{
+            "node_id":"1",
+            "maxDecimalPoints": 2,
+            "tag": {
+              "unit": {"label": "Watt", "value": "unit_101"},
+              "value": "tag_264"
+            }
+        }, {
+            "node_id":"1",
+            "maxDecimalPoints": 2,
+            "tag": {
+              "unit": {"label": "Watt", "value": "unit_101"},
+              "value": "tag_264"
+            }
+        }]
+    },
+
+
+    
+    "filter 2": {
+        "data": [
+            {
+            //group
+              "value": [
+                  {
+                    "label":"Incomer PQ Analyzer",
+                    "value":"device_group_1",
+                    "checked":true
+                },
+                {
+                    "label":"Incomer PQ Analyzer",
+                    "value":"device_group_1",
+                    "checked":true
+                }]
+            },
+            {
+            //shift
+              "value": [
+                {
+                    "label":"TOD 1",
+                    "value":"tod_value",
+                    "checked":true
+                },
+                {
+                    "label":"TOD 1",
+                    "value":"tod_value",
+                    "checked":true
+                }]
+            }
+        ],
+        "nodes":[{
+            "node_id":"1",
+            "maxDecimalPoints": 2,
+            "tag": {
+              "unit": {"label": "Watt", "value": "unit_101"},
+              "value": "tag_264"
+            }
+        }, {
+            "node_id":"1",
+            "maxDecimalPoints": 2,
+            "tag": {
+              "unit": {"label": "Watt", "value": "unit_101"},
+              "value": "tag_264"
+            }
+        }]
+    }
+
+}
