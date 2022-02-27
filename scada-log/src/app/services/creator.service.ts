@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import JSONFormatter from 'json-formatter-js'
 
 @Injectable({
   providedIn: 'root'

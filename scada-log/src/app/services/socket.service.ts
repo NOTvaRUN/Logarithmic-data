@@ -14,7 +14,9 @@ export class SocketService {
     const ws = new WebSocket('wss://localhost:8443');
 
     ws.onmessage = (e)=>{
-      console.log(e);
+      setTimeout(()=>{
+        ws.send((Math.random() * 100).toString())
+      },1000)
     }
     // const subject = webSocket("wss://localhost:8443");
     // // subject.next(JSON.stringify(this.json));
